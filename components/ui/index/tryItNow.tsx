@@ -7,12 +7,12 @@ const TryItNow = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-2 py-8">
       <h2 className="text-6xl font-bold text-center">
-        What Are You <br />
-        Waiting For
+        A Que Estas <br />
+        Esperando
       </h2>
-      <p className="text-neutral-500">Try It Now For Free</p>
+      <p className="text-neutral-500">Pruebalo ahora</p>
       <Button>
-        <Link href={"/login"}>Get started</Link>
+        <Link href={"/login"}>Comenzar</Link>
       </Button>
     </div>
   );

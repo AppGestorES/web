@@ -6,13 +6,13 @@ import Logo from "@/components/ui/Logo";
 
 const Footer = () => {
   const enlaces = [
-    { text: "Home", url: "/" },
-    { text: "About Us", url: "/about-us" },
-    { text: "Pricing", url: "/pricing" },
-    { text: "Features", url: "/#features" },
-    { text: "Contact", url: "/contact" },
-    { text: "Terms", url: "/terms" },
-    { text: "Privacy", url: "/privacy" },
+    { text: "Inicio", url: "/" },
+    { text: "Sobre Nosotros", url: "/about-us" },
+    { text: "Precios", url: "/pricing" },
+    { text: "Funciones", url: "/#features" },
+    { text: "Contacto", url: "/contact" },
+    { text: "Términos", url: "/terms" },
+    { text: "Privacidad", url: "/privacy" },
   ];
 
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <small className="text-neutral-500 absolute bottom-0 left-0 w-full text-center mb-2">
-        © 2024 ChitChat. All Rights Reserved.
+        © 2024 Gestor. Todos los derechos reservados.
       </small>
     </footer>
   );

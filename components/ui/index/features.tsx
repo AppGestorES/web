@@ -4,21 +4,21 @@ import FeatureCard from "./featureCard";
 
 const card = [
   {
-    image: "hero_image.svg",
-    title: "Chat With Your Friends",
-    text: "Easy to add and chat with your friends",
+    image: "undraw_cms_re_asu0.svg",
+    title: "Organiza tus Tareas",
+    text: "Gestiona tus pendientes de manera simple y efectiva.",
     direction: false,
   },
   {
-    image: "hero_image.svg",
-    title: "Create Amazing Communities",
-    text: "Create servers and chat with lots of people",
+    image: "undraw_file_manager_re_ms29.svg",
+    title: "Colabora con tu Equipo",
+    text: "Comparte proyectos y tareas con tu equipo fácilmente.",
     direction: true,
   },
   {
-    image: "hero_image.svg",
-    title: "Easy to navigate",
-    text: "Simple and intuitive design",
+    image: "undraw_manage_chats_re_0yoj.svg",
+    title: "Interfaz Intuitiva",
+    text: "Diseño simple y navegación intuitiva.",
     direction: false,
   },
 ];
@@ -27,9 +27,9 @@ const Features = () => {
   return (
     <div className="w-full h-full py-8" id="features">
       <h2 className="md:text-[60px] text-4xl text-center font-semibold flex flex-col gap-1 md:gap-8">
-        <span>Connect, Chat, and</span>
-        <span>Create Memories -</span>
-        <span className="hidden md:block">All in One Place</span>
+        <span>Conéctate, Organiza y</span>
+        <span>Optimiza -</span>
+        <span className="hidden md:block">Todo en un Solo Lugar</span>
       </h2>
       <FeatureCard card={card} />
     </div>

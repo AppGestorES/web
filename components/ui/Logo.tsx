@@ -7,7 +7,7 @@ interface props {
 const Logo: React.FC<props> = ({ estilos }) => {
   return (
     <h2 className={estilos}>
-      Chit<span className="text-sky-500">Chat</span>
+      App<span className="text-[#5472d4]">Gestor</span>
     </h2>
   );
 };

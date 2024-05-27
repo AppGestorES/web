@@ -12,14 +12,14 @@ const Hero = () => {
       <div className="flex flex-col items-center justify-center md:text-left gap-4 max-w-[500px]">
         <Logo estilos="text-[60px] font-bold md:w-full" />
         <p className="text-center md:text-left text-[#6D7280]">
-          Your Gateway to Meaningful Conversations, Authentic Friendships, and Unforgettable Moments
+          Gestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo
         </p>
         <div className="md:w-full flex gap-4">
           <Button>
-            <Link href={"/register"}>Get Started</Link>
+            <Link href={"/register"}>Comenzar</Link>
           </Button>
           <Button className=" hidden md:inline-flex" variant={"secondary"}>
-            <Link href={"/login"}>Already have an account?</Link>
+            <Link href={"/login"}>¿Ya tienes una cuenta?</Link>
           </Button>
         </div>
       </div>

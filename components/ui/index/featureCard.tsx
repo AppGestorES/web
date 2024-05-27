@@ -16,7 +16,7 @@ interface props {
 const FeatureCard: React.FC<props> = ({ card }) => {
   return (
     <>
-      <div>
+      <div className="mt-8">
         {card.map((cardItem, index) => (
           <div
             key={index}
@@ -24,7 +24,7 @@ const FeatureCard: React.FC<props> = ({ card }) => {
               cardItem.direction ? "md:flex-row-reverse " : "md:flex-row "
             }`}
           >
-            <Image src={cardItem.image} alt="" width={500} height={500} />
+            <Image src={cardItem.image} alt="" width={300} height={300} />
             <div>
               <h3 className="font-semibold text-2xl">{cardItem.title}</h3>
               <p>{cardItem.text}</p>

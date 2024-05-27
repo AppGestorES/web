@@ -6,9 +6,9 @@ import Header from "@/components/ui/index/header";
 import Footer from "@/components/ui/index/footer";
 
 export const metadata: Metadata = {
-  title: "ChitChat",
+  title: "App Gestor",
   description:
-    "Your Gateway to Meaningful Conversations, Authentic Friendships, and Unforgettable Moments",
+    "Gestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
