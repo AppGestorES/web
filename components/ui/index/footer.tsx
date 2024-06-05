@@ -25,11 +25,6 @@ const Footer = () => {
           links={enlaces}
           estilos="text-neutral-500 text-center flex flex-col md:flex-row w-full"
         />
-        <div className="flex gap-4 items-center justify-center">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-        </div>
       </div>
       <small className="text-neutral-500 absolute bottom-0 left-0 w-full text-center mb-2">
         © 2024 Gestor. Todos los derechos reservados.

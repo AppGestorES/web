@@ -25,10 +25,10 @@ const card = [
 
 const Features = () => {
   return (
-    <div className="w-full h-full py-8" id="features">
-      <h2 className="md:text-[60px] text-4xl text-center font-semibold flex flex-col gap-1 md:gap-8">
+    <div className="w-1/2 h-full py-8" id="features">
+      <h2 className="md:text-[60px] text-4xl text-center font-semibold flex flex-col gap-1 md:gap-8 py-8">
         <span>Conéctate, Organiza y</span>
-        <span>Optimiza -</span>
+        <span>Optimiza.</span>
         <span className="hidden md:block">Todo en un Solo Lugar</span>
       </h2>
       <FeatureCard card={card} />

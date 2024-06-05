@@ -20,15 +20,21 @@ const FeatureCard: React.FC<props> = ({ card }) => {
         {card.map((cardItem, index) => (
           <div
             key={index}
-            className={`w-full h-full flex items-center justify-center flex-col text-center ${
-              cardItem.direction ? "md:flex-row-reverse " : "md:flex-row "
-            }`}
+            className={`w-full h-full flex items-center justify-between flex-col text-center ${cardItem.direction ? "md:flex-row-reverse " : "md:flex-row "}`}
           >
-            <Image src={cardItem.image} alt="" width={300} height={300} />
-            <div>
-              <h3 className="font-semibold text-2xl">{cardItem.title}</h3>
-              <p>{cardItem.text}</p>
-            </div>
+            <Image src={cardItem.image} alt={cardItem.title} width={300} height={300} />
+
+            {index % 2 === 0 ? (
+              <div className="text-left w-1/2">
+                <h3 className="font-semibold text-2xl">{cardItem.title}</h3>
+                <p>{cardItem.text}</p>
+              </div>
+            ) : (
+              <div className="text-right w-1/2">
+                <h3 className="font-semibold text-2xl">{cardItem.title}</h3>
+                <p>{cardItem.text}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
