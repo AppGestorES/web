@@ -4,6 +4,7 @@ import "./reset.css";
 import { inter } from "./fonts";
 import Header from "@/components/ui/index/header";
 import Footer from "@/components/ui/index/footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "App Gestor",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
       </body>
+      <GoogleTagManager gtmId="GTM-TDTH9WC9" />
     </html>
   );
 }

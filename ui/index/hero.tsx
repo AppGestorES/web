@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import hero_image from "@/public/hero_image.svg";
 import Link from "next/link";
 import Logo from "@/components/ui/Logo";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Hero = () => {
   return (
@@ -15,7 +16,11 @@ const Hero = () => {
           Your Gateway to Meaningful Conversations, Authentic Friendships, and Unforgettable Moments
         </p>
         <div className="md:w-full flex gap-4">
-          <Button>
+          <Button
+            onClick={() => {
+              sendGTMEvent({ event: "Get Started", value: "True" });
+            }}
+          >
             <Link href={"/register"}>Get Started</Link>
           </Button>
           <Button className=" hidden md:inline-flex" variant={"secondary"}>
