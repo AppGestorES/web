@@ -9,12 +9,12 @@ import { GoogleTagManager } from "@next/third-parties/google";
 export const metadata: Metadata = {
   title: "App Gestor",
   description:
-    "Gestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo",
+    "AppGestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <GoogleTagManager gtmId="GTM-TDTH9WC9" />
       <body className={inter.className}>
         <Header />
