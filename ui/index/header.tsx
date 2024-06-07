@@ -28,7 +28,7 @@ const Header = () => {
       </Link>
       <HeaderLinks links={enlaces} estilos={estilos} />
       <Button className=" hidden md:block">
-        <Link href={"/register"}> Get Started</Link>
+        <Link href={"https://panel.appgestor.es/register"}> Get Started</Link>
       </Button>
       <Button className="block md:hidden bg-[none] hover:bg-[none]" onClick={mobileMenu}>
         <Menu className="text-black" />

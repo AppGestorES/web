@@ -17,10 +17,10 @@ const Hero = () => {
         </p>
         <div className="md:w-full flex gap-4">
           <Button>
-            <Link href={"/register"}>Get Started</Link>
+            <Link href={"https://panel.appgestor.es/register"}>Get Started</Link>
           </Button>
           <Button className=" hidden md:inline-flex" variant={"secondary"}>
-            <Link href={"/login"}>Already have an account?</Link>
+            <Link href={"https://panel.appgestor.es/login"}>Already have an account?</Link>
           </Button>
         </div>
       </div>

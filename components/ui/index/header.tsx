@@ -33,7 +33,7 @@ const Header = () => {
           sendGAEvent({ event: "Register", value: "true" });
         }}
       >
-        <Link href={"/register"}> Empezar</Link>
+        <Link href={"https://panel.appgestor.es/register"}> Empezar</Link>
       </Button>
       <Button className="block md:hidden bg-[] hover:bg-[none]" onClick={mobileMenu}>
         <Menu className="text-black" />
