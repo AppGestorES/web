@@ -21,7 +21,7 @@ const Hero = () => {
               sendGTMEvent({ event: "Get Started", value: "True" });
             }}
           >
-            <Link href={"/register"}>Comenzar</Link>
+            <Link href={"https://panel.appgestor.es/register"}>Comenzar</Link>
           </Button>
           <Button
             className=" hidden md:inline-flex"
@@ -31,7 +31,7 @@ const Hero = () => {
               sendGTMEvent({ event: "login", value: "true" });
             }}
           >
-            <Link href={"/login"}>¿Ya tienes una cuenta?</Link>
+            <Link href={"/https://panel.appgestor.es/login"}>¿Ya tienes una cuenta?</Link>
           </Button>
         </div>
       </div>

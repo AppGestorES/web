@@ -18,7 +18,7 @@ const TryItNow = () => {
           sendGTMEvent({ event: "login", value: "true" });
         }}
       >
-        <Link href={"/login"}>Comenzar</Link>
+        <Link href={"https://panel.appgestor.es/login"}>Comenzar</Link>
       </Button>
     </div>
   );

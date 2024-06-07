@@ -12,7 +12,7 @@ const TryItNow = () => {
       </h2>
       <p className="text-neutral-500">Try It Now For Free</p>
       <Button>
-        <Link href={"/login"}>Get started</Link>
+        <Link href={"/https://panel.appgestor.es/login"}>Get started</Link>
       </Button>
     </div>
   );
