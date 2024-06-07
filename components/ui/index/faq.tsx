@@ -10,7 +10,7 @@ import {
 const Faq = () => {
   return (
     <>
-      <div className="flex w-full items-center justify-center py-8">
+      <div className="flex w-1/2 items-center justify-center py-8">
         <div className="hidden md:flex md:flex-col text-left w-1/2 justify-center">
           <h2 className="text-6xl font-bold">FAQ</h2>
           <span className="text-neutral-500">Preguntas Frecuentes</span>

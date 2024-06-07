@@ -13,9 +13,8 @@ const Header = () => {
 
   const enlaces = [
     { text: "Inicio", url: "/" },
-    { text: "Sobre Nosotros", url: "/about" },
-    { text: "Funciones", url: "/#features" },
-    { text: "Contacto", url: "/contact" },
+    { text: "Sobre Nosotros", url: "/sobrenosotros" },
+    { text: "Contacto", url: "/contacto" },
   ];
 
   const estilos =
