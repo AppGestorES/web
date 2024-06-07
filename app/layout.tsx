@@ -8,7 +8,7 @@ import Footer from "@/components/ui/index/footer";
 export const metadata: Metadata = {
   title: "App Gestor",
   description:
-    "Gestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo",
+    "AppGestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

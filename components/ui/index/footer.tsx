@@ -7,12 +7,10 @@ import Logo from "@/components/ui/Logo";
 const Footer = () => {
   const enlaces = [
     { text: "Inicio", url: "/" },
-    { text: "Sobre Nosotros", url: "/about-us" },
-    { text: "Precios", url: "/pricing" },
-    { text: "Funciones", url: "/#features" },
-    { text: "Contacto", url: "/contact" },
-    { text: "Términos", url: "/terms" },
-    { text: "Privacidad", url: "/privacy" },
+    { text: "Sobre Nosotros", url: "/sobrenosotros" },
+    { text: "Contacto", url: "/contacto" },
+    // { text: "Términos", url: "/terms" },
+    // { text: "Privacidad", url: "/privacy" },
   ];
 
   return (
