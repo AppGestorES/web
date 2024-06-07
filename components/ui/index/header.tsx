@@ -5,6 +5,7 @@ import HeaderLinks from "./headerLinks";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/Logo";
 import Link from "next/link";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Header = () => {
   const mobileMenu = () => {
@@ -26,7 +27,12 @@ const Header = () => {
         <Logo estilos="text-2xl font-bold" />
       </Link>
       <HeaderLinks links={enlaces} estilos={estilos} />
-      <Button className=" hidden md:block">
+      <Button
+        className=" hidden md:block"
+        onClick={() => {
+          sendGAEvent({ event: "Register", value: "true" });
+        }}
+      >
         <Link href={"/register"}> Empezar</Link>
       </Button>
       <Button className="block md:hidden bg-[] hover:bg-[none]" onClick={mobileMenu}>

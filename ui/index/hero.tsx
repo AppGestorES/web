@@ -16,11 +16,7 @@ const Hero = () => {
           Your Gateway to Meaningful Conversations, Authentic Friendships, and Unforgettable Moments
         </p>
         <div className="md:w-full flex gap-4">
-          <Button
-            onClick={() => {
-              sendGTMEvent({ event: "Get Started", value: "True" });
-            }}
-          >
+          <Button>
             <Link href={"/register"}>Get Started</Link>
           </Button>
           <Button className=" hidden md:inline-flex" variant={"secondary"}>

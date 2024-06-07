@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import hero_image from "@/public/hero_image.svg";
 import Link from "next/link";
 import Logo from "@/components/ui/Logo";
+import { GoogleTagManager, sendGTMEvent } from "@next/third-parties/google";
 
 const Hero = () => {
   return (
@@ -15,10 +16,20 @@ const Hero = () => {
           Gestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo
         </p>
         <div className="md:w-full flex gap-4">
-          <Button>
+          <Button
+            onClick={() => {
+              sendGTMEvent({ event: "Get Started", value: "True" });
+            }}
+          >
             <Link href={"/register"}>Comenzar</Link>
           </Button>
-          <Button className=" hidden md:inline-flex" variant={"secondary"}>
+          <Button
+            className=" hidden md:inline-flex"
+            variant={"secondary"}
+            onClick={() => {
+              sendGTMEvent({ event: "login", value: "true" });
+            }}
+          >
             <Link href={"/login"}>¿Ya tienes una cuenta?</Link>
           </Button>
         </div>

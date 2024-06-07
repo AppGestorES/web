@@ -9,8 +9,6 @@ const Footer = () => {
     { text: "Inicio", url: "/" },
     { text: "Sobre Nosotros", url: "/sobrenosotros" },
     { text: "Contacto", url: "/contacto" },
-    // { text: "Términos", url: "/terms" },
-    // { text: "Privacidad", url: "/privacy" },
   ];
 
   return (
