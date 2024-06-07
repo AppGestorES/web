@@ -4,7 +4,7 @@ import "./reset.css";
 import { inter } from "./fonts";
 import Header from "@/components/ui/index/header";
 import Footer from "@/components/ui/index/footer";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "App Gestor",
@@ -16,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <GoogleTagManager gtmId="GTM-TDTH9WC9" />
+      <GoogleAnalytics gaId="G-SKFPM47HD3" />
       <body className={inter.className}>
         <Header />
         {children}

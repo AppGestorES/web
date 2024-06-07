@@ -1,11 +1,12 @@
-"use client"
+"use client";
+
 import { useState } from "react";
 
 export default function Contacto() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e: any) => {
@@ -14,16 +15,16 @@ export default function Contacto() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(formData);
   };
   return (
     <>
-      <main className="px-[19px] md:px-[112px] flex flex-col justify-center items-center">
-      <section className="max-w-4xl w-full bg-white shadow-md rounded-lg p-6 mt-8">
+      <main className="px-[19px] md:px-[112px] flex flex-col justify-center items-center h-[70vh]">
+        <section className="max-w-4xl w-full bg-white shadow-md rounded-lg p-6 my-8">
           <h1 className="text-3xl font-bold text-center text-gray-900">Contacto</h1>
-          
+
           <p className="text-gray-700 leading-relaxed mb-6 text-center">
-            Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través del siguiente formulario.
+            Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través
+            del siguiente formulario.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
