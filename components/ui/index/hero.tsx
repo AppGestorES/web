@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import hero_image from "@/public/hero_image.svg";
 import Link from "next/link";
 import Logo from "@/components/ui/Logo";
-import { GoogleTagManager, sendGTMEvent } from "@next/third-parties/google";
+import { sendGTMEvent, sendGAEvent } from "@next/third-parties/google";
 
 const Hero = () => {
   return (
@@ -27,6 +27,7 @@ const Hero = () => {
             className=" hidden md:inline-flex"
             variant={"secondary"}
             onClick={() => {
+              sendGAEvent({ event: "login", value: "true" });
               sendGTMEvent({ event: "login", value: "true" });
             }}
           >
