@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="px-[19px] md:px-[112px]">
+      <main className="px-[19px] md:px-[112px] flex flex-col justify-center items-center">
         <Hero />
         <Features />
         <TryItNow />
