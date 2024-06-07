@@ -27,12 +27,7 @@ const Header = () => {
         <Logo estilos="text-2xl font-bold" />
       </Link>
       <HeaderLinks links={enlaces} estilos={estilos} />
-      <Button
-        className=" hidden md:block"
-        onClick={() => {
-          sendGAEvent({ event: "Register", value: "true" });
-        }}
-      >
+      <Button className=" hidden md:block" id="click_register">
         <Link href={"https://panel.appgestor.es/register"}> Empezar</Link>
       </Button>
       <Button className="block md:hidden bg-[] hover:bg-[none]" onClick={mobileMenu}>

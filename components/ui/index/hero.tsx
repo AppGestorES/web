@@ -16,21 +16,10 @@ const Hero = () => {
           Gestor: Tu Portal hacia la Productividad, la Organización Eficaz y el Éxito Sin Esfuerzo
         </p>
         <div className="md:w-full flex gap-4">
-          <Button
-            onClick={() => {
-              sendGTMEvent({ event: "Get Started", value: "True" });
-            }}
-          >
+          <Button id="click_register">
             <Link href={"https://panel.appgestor.es/register"}>Comenzar</Link>
           </Button>
-          <Button
-            className=" hidden md:inline-flex"
-            variant={"secondary"}
-            onClick={() => {
-              sendGAEvent({ event: "login", value: "true" });
-              sendGTMEvent({ event: "login", value: "true" });
-            }}
-          >
+          <Button className=" hidden md:inline-flex" variant={"secondary"} id="click_login">
             <Link href={"/https://panel.appgestor.es/login"}>¿Ya tienes una cuenta?</Link>
           </Button>
         </div>
