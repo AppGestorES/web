@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "../button";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const TryItNow = () => {
   return (
@@ -11,7 +12,12 @@ const TryItNow = () => {
         Esperando?
       </h2>
       <p className="text-neutral-500">Pruébalo ahora</p>
-      <Button className="mt-8">
+      <Button
+        className="mt-8"
+        onClick={() => {
+          sendGTMEvent({ event: "login", value: "true" });
+        }}
+      >
         <Link href={"/login"}>Comenzar</Link>
       </Button>
     </div>
