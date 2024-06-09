@@ -5,6 +5,7 @@ import { inter } from "./fonts";
 import Header from "@/components/ui/index/header";
 import Footer from "@/components/ui/index/footer";
 import Script from "next/script";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "App Gestor",
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </noscript>
         <Header />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>

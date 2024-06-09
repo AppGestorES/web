@@ -1,8 +1,14 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+import { ToastAction } from "@/components/ui/toast";
+import { useToast } from "@/components/ui/use-toast";
 
 export default function Contacto() {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,7 +37,7 @@ export default function Contacto() {
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Nombre
               </label>
-              <input
+              <Input
                 type="text"
                 name="name"
                 id="name"
@@ -44,7 +50,7 @@ export default function Contacto() {
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Correo Electrónico
               </label>
-              <input
+              <Input
                 type="email"
                 name="email"
                 id="email"
@@ -57,7 +63,7 @@ export default function Contacto() {
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">
                 Mensaje
               </label>
-              <textarea
+              <Textarea
                 name="message"
                 id="message"
                 value={formData.message}
@@ -66,12 +72,20 @@ export default function Contacto() {
                 className="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
               />
             </div>
-            <button
+            <Button
               type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white"
+              onClick={() => {
+                toast({
+                  title: "Formulario enviado",
+                  description: "Te contactaremos lo antes posible",
+                  action: <ToastAction altText="Goto schedule to undo">Deshacer</ToastAction>,
+                });
+                setFormData({ name: "", email: "", message: "" });
+              }}
             >
               Enviar
-            </button>
+            </Button>
           </form>
         </section>
       </main>
